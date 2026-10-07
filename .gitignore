@@ -4,3 +4,6 @@ dist
 
 # original single-file version — contains the old admin password in plain text, never publish
 index (1).html
+
+# instructions for the site owner, sent via Telegram — not part of the site
+ИНСТРУКЦИЯ ДЛЯ УЧЕНИКА.txt
