@@ -1,0 +1,7 @@
+footer{border-top:1px solid var(--border); background:#020617; padding:56px 0 0; color:var(--muted);}
+.fgrid{display:grid; grid-template-columns:1fr; gap:34px; padding-bottom:40px;}
+@media(min-width:800px){.fgrid{grid-template-columns:1.3fr 1fr 1fr;}}
+.fgrid h4{color:#fff; font-size:12.5px; text-transform:uppercase; letter-spacing:.08em; margin:0 0 12px;}
+.fgrid ul{list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:9px; font-size:14px;}
+.fgrid ul a:hover{color:var(--cyan);}
+.fbottom{border-top:1px solid var(--border); text-align:center; padding:18px 0 96px; font-size:12.5px; color:#64748b;}

@@ -1,0 +1,32 @@
+/* contact */
+.contact-tiles{display:grid; grid-template-columns:1fr; gap:14px; margin-bottom:44px;}
+@media(min-width:700px){.contact-tiles{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1000px){.contact-tiles{grid-template-columns:repeat(4,1fr);}}
+
+.pay-box{border:1px solid rgba(34,211,238,.3); background:rgba(34,211,238,.05); border-radius:18px; padding:24px; margin-bottom:36px;}
+.pay-box h3{color:#fff; font-size:18px; margin:0 0 10px; display:flex; align-items:center; gap:8px;}
+.pay-box ol{color:var(--muted); font-size:14.5px; line-height:1.8; margin:0 0 18px; padding-left:20px;}
+.pay-box ol b{color:#fff;}
+.pay-actions{display:flex; flex-wrap:wrap; gap:12px;}
+.receipt-check{
+  display:flex; align-items:flex-start; gap:10px; margin-bottom:18px; padding:14px 16px;
+  border:1px solid rgba(255,255,255,.12); border-radius:12px; background:rgba(255,255,255,.02); font-size:13.5px; color:var(--muted);
+}
+.receipt-check input{margin-top:3px; width:17px; height:17px; accent-color:var(--cyan); flex:none;}
+.tile{border:1px solid var(--border); background:var(--card); border-radius:14px; padding:18px; text-align:center; transition:border-color .25s, transform .25s;}
+.tile:hover{border-color:rgba(34,211,238,.4); transform:translateY(-3px);}
+.tile .label{font-size:11px; color:var(--muted); margin-bottom:5px;}
+.tile .val{color:#fff; font-weight:700; font-size:15px;}
+
+form.formcard{border:1px solid var(--border); background:var(--card); border-radius:20px; padding:26px;}
+.frow{display:grid; grid-template-columns:1fr; gap:18px; margin-bottom:18px;}
+@media(min-width:640px){.frow{grid-template-columns:1fr 1fr;}}
+.field label{display:block; font-size:12px; font-weight:600; color:var(--muted); margin-bottom:6px;}
+.submit-btn{
+  width:100%; padding:15px; border:0; border-radius:999px; font-weight:800; font-size:15px; color:#fff; cursor:pointer;
+  background:linear-gradient(90deg,var(--cyan),var(--indigo)); box-shadow:0 10px 26px rgba(34,211,238,.3); transition:transform .2s, opacity .2s;
+}
+.submit-btn:hover{transform:scale(1.015);}
+.submit-btn:disabled{opacity:.6; cursor:not-allowed; transform:none;}
+.success-box{border:1px solid rgba(34,211,238,.35); background:rgba(34,211,238,.08); border-radius:20px; padding:44px 26px; text-align:center;}
+.success-box p{color:#fff; font-weight:700; font-size:17px; margin:0 0 18px;}

@@ -1,0 +1,26 @@
+/* registration bar */
+.reg-bar{
+  padding:14px 0; border-bottom:1px solid var(--border); background:rgba(15,23,42,.55);
+  margin-top:calc(64px + env(safe-area-inset-top,0px));
+  max-height:200px; opacity:1; overflow:hidden;
+  transition:max-height .5s ease, opacity .4s ease, padding .5s ease, margin .5s ease, border-color .5s ease;
+}
+.reg-bar.hidden{max-height:0; opacity:0; padding:0; margin-top:calc(64px + env(safe-area-inset-top,0px)); border-color:transparent; pointer-events:none;}
+.reg-done-msg{
+  display:none; align-items:center; gap:10px; font-size:13.5px; color:var(--muted);
+  padding:10px 0; margin-top:calc(64px + env(safe-area-inset-top,0px));
+}
+.reg-done-msg.show{display:flex;}
+.reg-bar.hidden + .reg-done-msg{margin-top:0;}
+.reg-done-msg b{color:var(--cyan);}
+.reg-edit-link{color:var(--cyan); font-weight:600; cursor:pointer; background:none; border:0; font-size:13.5px; padding:0;}
+.reg-inner{display:flex; flex-wrap:wrap; align-items:end; gap:12px;}
+.reg-field{flex:1 1 140px; min-width:120px;}
+.reg-field label{display:block; font-size:11px; font-weight:600; color:var(--muted); margin-bottom:5px;}
+.reg-field .input{padding:9px 11px; font-size:13.5px;}
+@media(max-width:520px){
+  .reg-inner{flex-direction:column; align-items:stretch;}
+  .reg-field, .reg-submit{flex:1 1 auto; min-width:0; width:100%;}
+}
+.reg-submit{flex:1 1 180px; min-width:160px;}
+.reg-submit .cta-btn{width:100%; display:block; text-align:center; padding:11px 16px; font-size:13.5px;}

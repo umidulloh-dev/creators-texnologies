@@ -1,0 +1,36 @@
+<div class="reg-bar" id="reg-bar">
+  <div class="wrap">
+    <div class="reg-inner">
+      <div class="reg-field">
+        <label for="reg-firstname" data-i18n="reg.firstName">Имя</label>
+        <input class="input" id="reg-firstname" type="text" placeholder="Имя" maxlength="60" autocomplete="given-name" data-i18n-attr="placeholder:reg.firstName"/>
+      </div>
+      <div class="reg-field">
+        <label for="reg-lastname" data-i18n="reg.lastName">Фамилия</label>
+        <input class="input" id="reg-lastname" type="text" placeholder="Фамилия" maxlength="60" autocomplete="family-name" data-i18n-attr="placeholder:reg.lastName"/>
+      </div>
+      <div class="reg-field">
+        <label for="reg-country" data-i18n="reg.country">Страна</label>
+        <select class="input" id="reg-country"></select>
+      </div>
+      <div class="reg-field" style="flex:0 1 110px; min-width:100px;">
+        <label for="reg-currency" data-i18n="reg.currency">Валюта</label>
+        <select class="input" id="reg-currency">
+          <option value="UZS">UZS</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="KZT">KZT</option>
+        </select>
+      </div>
+      <div class="reg-submit">
+        <a href="{{telegram}}" target="_blank" rel="noopener noreferrer" id="reg-contact-btn" class="cta-btn" data-i18n="reg.contact">Связаться с продавцом</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="reg-done-msg" id="reg-done-msg">
+  <div class="wrap" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+    <span><span data-i18n="reg.done">Регистрация завершена:</span> <b id="reg-done-name"></b></span>
+    <button type="button" class="reg-edit-link" id="reg-edit-btn" data-i18n="reg.edit">изменить</button>
+  </div>
+</div>

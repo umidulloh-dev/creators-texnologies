@@ -1,0 +1,8 @@
+.card-svc{display:flex; flex-direction:column;}
+.card-svc p{flex:1;}
+.order-btn{display:inline-block; align-self:flex-start; margin-top:18px; padding:10px 24px; font-size:13.5px;}
+.icon-badge{
+  width:44px; height:44px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg,rgba(34,211,238,.18),rgba(99,102,241,.18)); border:1px solid rgba(34,211,238,.25);
+  margin-bottom:14px; font-size:20px;
+}

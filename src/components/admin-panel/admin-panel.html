@@ -1,0 +1,22 @@
+<div class="admin-panel" id="admin-panel" style="display:none;">
+  <div class="wrap">
+    <div class="admin-lock" id="admin-lock">
+      <p>Введите пароль для доступа к панели управления</p>
+      <input class="input" type="password" id="admin-password" placeholder="Пароль" />
+      <p class="admin-err" id="admin-err">Неверный пароль.</p>
+      <button type="button" class="cta-btn" id="admin-unlock-btn" style="padding:10px 24px; font-size:13px;">Войти</button>
+    </div>
+
+    <div class="admin-content" id="admin-content">
+      <div class="admin-head">
+        <h4>Заявки и регистрации, сохранённые в этом браузере</h4>
+        <div class="admin-actions">
+          <button type="button" id="admin-refresh-btn">Обновить</button>
+          <button type="button" id="admin-clear-btn">Очистить</button>
+          <button type="button" id="admin-lock-btn">Выйти</button>
+        </div>
+      </div>
+      <div id="admin-table-holder"></div>
+    </div>
+  </div>
+</div>

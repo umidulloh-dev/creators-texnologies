@@ -1,0 +1,4 @@
+/* final cta */
+.finalcta{text-align:center; position:relative; overflow-x:hidden; max-width:100vw;}
+.finalcta h2{font-size:clamp(28px,5vw,42px); font-weight:900; color:#fff; margin-bottom:14px;}
+.finalcta p{color:var(--muted); margin-bottom:32px;}

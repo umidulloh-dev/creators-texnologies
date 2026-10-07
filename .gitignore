@@ -1,0 +1,6 @@
+node_modules
+dist
+.DS_Store
+
+# original single-file version — contains the old admin password in plain text, never publish
+index (1).html

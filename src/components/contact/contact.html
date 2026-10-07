@@ -1,0 +1,73 @@
+<section id="contact">
+  <div class="wrap" style="max-width:940px; margin:0 auto;">
+    <h2 class="h2 reveal" data-i18n="contact.title">Контакты</h2>
+    <div class="contact-tiles reveal">
+      <a href="tel:{{phone}}" class="tile" data-track="phone_click" data-track-source="contact_page">
+        <div class="label" data-i18n="contact.phone">Телефон</div><div class="val">{{phoneDisplay}}</div>
+      </a>
+      <a href="{{telegram}}" target="_blank" rel="noopener noreferrer" class="tile" data-track="telegram_click" data-track-source="contact_page">
+        <div class="label">Telegram</div><div class="val">{{phoneDisplay}}</div>
+      </a>
+      <div class="tile"><div class="label">CREATORS TEXNOLOGIES</div><div class="val" style="font-size:13px;">1 000 000 UZS / $85 / €75 / 38 000₸</div></div>
+      <a href="{{instagram}}" target="_blank" rel="noopener noreferrer" class="tile" data-track="instagram_click" data-track-source="contact_page">
+        <div class="label">Instagram</div><div class="val">{{instagramHandle}}</div>
+      </a>
+    </div>
+
+    <div class="pay-box reveal">
+      <h3 data-i18n="pay.title">💳 Оплата проекта</h3>
+      <ol>
+        <li data-i18n="pay.step1">Согласуйте с менеджером итоговую сумму и этапы оплаты в Telegram.</li>
+        <li data-i18n="pay.step2">Менеджер пришлёт вам актуальные реквизиты карты для перевода лично в чате.</li>
+        <li data-i18n="pay.step3">Сделайте скриншот чека и отправьте его в тот же чат — без чека заявка не считается оплаченной.</li>
+      </ol>
+      <div class="pay-actions">
+        <a href="{{telegram}}" target="_blank" rel="noopener noreferrer" class="cta-btn" data-track="telegram_click" data-track-source="payment_box" data-i18n="pay.button">Получить реквизиты в Telegram</a>
+      </div>
+    </div>
+
+
+    <div style="max-width:640px; margin:0 auto;" class="reveal">
+      <div id="form-success" class="success-box" style="display:none;" role="status">
+        <p data-i18n="form.success">Текст заявки скопирован и Telegram открыт в новой вкладке. Вставьте сообщение в чат и отправьте его — только после этого заявка дойдёт до нас.</p>
+        <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+          <a href="{{telegram}}" target="_blank" rel="noopener noreferrer" class="cta-btn" data-track="telegram_click" data-track-source="form_success" data-i18n="form.openTelegram">Открыть Telegram ещё раз</a>
+          <button type="button" class="ghost-btn" id="form-reset-btn" data-i18n="form.reset">Заполнить заново</button>
+        </div>
+      </div>
+
+      <form class="formcard" id="contact-form">
+        <div class="frow">
+          <div class="field"><label for="f-name" data-i18n="form.name">Имя</label><input class="input" required id="f-name" name="name" maxlength="100" autocomplete="name"/></div>
+          <div class="field"><label for="f-email" data-i18n="form.email">Email</label><input class="input" required type="email" id="f-email" name="email" maxlength="150" autocomplete="email"/></div>
+          <div class="field"><label for="country-select" data-i18n="form.country">Страна</label>
+            <select class="input" name="country" id="country-select"></select>
+          </div>
+          <div class="field"><label for="f-phone" data-i18n="form.phone">Телефон</label><input class="input" type="tel" id="f-phone" name="phone" maxlength="30" autocomplete="tel"/></div>
+          <div class="field"><label for="f-telegram" data-i18n="form.messenger">Telegram / WhatsApp</label><input class="input" id="f-telegram" name="telegram" maxlength="60"/></div>
+          <div class="field"><label for="f-type" data-i18n="form.projectType">Тип проекта</label>
+            <select class="input" id="f-type" name="projectType">
+              <option value="website" data-i18n="form.type.website">Веб-сайт</option>
+              <option value="webapp" data-i18n="form.type.webapp">Веб-приложение</option>
+              <option value="mobile" data-i18n="form.type.mobile">Мобильное приложение</option>
+              <option value="ecommerce" data-i18n="form.type.ecommerce">Интернет-магазин</option>
+              <option value="landing" data-i18n="form.type.landing">Лендинг</option>
+              <option value="custom" data-i18n="form.type.custom">Другое</option>
+            </select>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:18px;">
+          <label for="f-message" data-i18n="form.message">Описание проекта</label>
+          <textarea class="input" required id="f-message" name="message" rows="5" maxlength="2000"></textarea>
+        </div>
+        <label class="receipt-check">
+          <input type="checkbox" id="receipt-confirm" required />
+          <span data-i18n="form.receipt">Я получил(а) реквизиты карты у менеджера в Telegram, перевёл(а) предоплату и отправлю чек в тот же чат — без этого заявка не обрабатывается.</span>
+        </label>
+
+        <p id="form-error" role="alert" style="display:none; color:#f87171; font-size:14px; margin:0 0 14px;"></p>
+        <button type="submit" class="submit-btn" id="submit-btn" data-track="form_submit_attempt" data-i18n="form.submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+</section>

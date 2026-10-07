@@ -1,0 +1,26 @@
+/* "Начать проект" popover */
+.sp-popover{
+  position:fixed; inset:0; z-index:90; display:none; align-items:center; justify-content:center;
+  background:rgba(2,6,23,.7); padding:20px;
+}
+.sp-popover.show{display:flex;}
+.sp-box{
+  width:100%; max-width:320px; border-radius:20px; border:1px solid var(--border);
+  background:#0b1220; padding:24px; text-align:center; box-shadow:0 30px 70px rgba(0,0,0,.5);
+  animation:spIn .25s ease;
+}
+@keyframes spIn{from{transform:scale(.92); opacity:0;} to{transform:scale(1); opacity:1;}}
+.sp-box h4{color:#fff; font-size:16px; margin:0 0 6px;}
+.sp-box p{color:var(--muted); font-size:13px; margin:0 0 20px;}
+.sp-choices{display:flex; flex-direction:column; gap:12px;}
+.sp-choice{
+  display:flex; align-items:center; gap:12px; padding:13px 16px; border-radius:14px;
+  border:1px solid var(--border); background:rgba(255,255,255,.03); color:#fff; font-weight:600; font-size:14.5px;
+  transition:border-color .2s, transform .2s;
+}
+.sp-choice:hover{transform:translateY(-2px);}
+.sp-choice svg{flex:none; width:22px; height:22px;}
+.sp-choice.tg{border-color:rgba(56,189,248,.3);}
+.sp-choice.ig:hover{border-color:rgba(220,39,67,.4);}
+.sp-choice.tg:hover{border-color:rgba(56,189,248,.6);}
+.sp-close{margin-top:18px; background:none; border:0; color:var(--muted); font-size:13px; cursor:pointer;}

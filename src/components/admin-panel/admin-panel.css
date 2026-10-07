@@ -1,0 +1,23 @@
+/* admin panel (toggle button lives in the footer) */
+.admin-toggle{display:block; margin:12px auto 0; padding:9px 16px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--muted); font-size:12.5px; font-weight:600; cursor:pointer; touch-action:manipulation;}
+.admin-toggle:hover{color:#fff; border-color:rgba(34,211,238,.4);}
+.admin-panel{border-top:1px solid var(--border); background:#000; padding:26px 0 34px;}
+.admin-lock{max-width:320px; margin:0 auto; text-align:center;}
+.admin-lock p{color:var(--muted); font-size:13px; margin:0 0 12px;}
+.admin-lock .input{margin-bottom:12px;}
+.admin-err{color:#f87171; font-size:12.5px; margin:0 0 10px; display:none;}
+.admin-content{display:none;}
+.admin-content.show{display:block;}
+.admin-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; flex-wrap:wrap; gap:10px;}
+.admin-head h4{color:#fff; font-size:15px; margin:0;}
+.admin-actions{display:flex; gap:8px;}
+.admin-actions button{
+  font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:var(--muted); cursor:pointer;
+}
+.admin-actions button:hover{border-color:rgba(34,211,238,.4); color:#fff;}
+.admin-table-wrap{overflow-x:auto; border:1px solid var(--border); border-radius:12px;}
+table.admin-table{width:100%; border-collapse:collapse; font-size:12.5px; white-space:nowrap;}
+table.admin-table th{text-align:left; color:var(--cyan); padding:9px 12px; border-bottom:1px solid var(--border); background:rgba(255,255,255,.03);}
+table.admin-table td{padding:9px 12px; border-bottom:1px solid rgba(255,255,255,.06); color:var(--muted);}
+table.admin-table tr:last-child td{border-bottom:0;}
+.admin-empty{color:var(--muted); font-size:13px; text-align:center; padding:24px 0;}
