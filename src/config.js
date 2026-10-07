@@ -12,7 +12,7 @@ export const CONTACTS = {
 
 // Public address of the site, no trailing slash, e.g. "https://creators-tex.uz".
 // When set, the build adds canonical/og:url/og:image tags and sitemap.xml.
-export const SITE_URL = '';
+export const SITE_URL = 'https://zzzzz-sp.github.io/creators-texnologies';
 
 // Google Analytics 4 id, e.g. "G-XXXXXXXXXX". Empty = analytics off.
 export const GA_MEASUREMENT_ID = '';
