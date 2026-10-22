@@ -3,7 +3,7 @@ import uz from './uz.js';
 import en from './en.js';
 import { loadState, saveState } from '../lib/storage.js';
 
-export const LANGS = { ru, uz, en };
+const LANGS = { ru, uz, en };
 const RU_FALLBACK = ['ru','kk','ky','tg','tk','be','uk'];
 
 function detectLang(){
@@ -26,7 +26,7 @@ export function onLangChange(fn){ listeners.push(fn); }
 //   data-i18n="key"                     → textContent
 //   data-i18n-html="key"                → innerHTML (only for our own dictionary strings)
 //   data-i18n-attr="placeholder:key;…"  → attributes
-export function applyTranslations(root = document){
+function applyTranslations(root = document){
   root.querySelectorAll('[data-i18n]').forEach(n=>{ n.textContent = t(n.dataset.i18n); });
   root.querySelectorAll('[data-i18n-html]').forEach(n=>{ n.innerHTML = t(n.dataset.i18nHtml); });
   root.querySelectorAll('[data-i18n-attr]').forEach(n=>{
@@ -41,7 +41,7 @@ export function applyTranslations(root = document){
   document.querySelectorAll('[data-lang]').forEach(b=> b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
 }
 
-export function setLang(next){
+function setLang(next){
   if(!LANGS[next] || next === lang) return;
   lang = next;
   saveState({ lang });
